@@ -1,0 +1,55 @@
+Provider.tf
+
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+Paste this and enter terraform init
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+
+=======================================================
+then craate the login using below code
+
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
+
+
+
+
+go to IAM role ---- select user---select user name-----attache policies directly-------->> select policy admiministatro then create users
+
+
+then go to users ---->>>select security credintials >>> and create the access key and create keys you will get secret and access keys
+
+
+access key===  AKIA5V6HK7ILRGKFN6WK
+secret key= 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
+
+===========================================
+
+
+Creating ec2
+
+
+resource "aws_instance" "webserver" {
+  ami           = ami-069d73f3235b535bd
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "server1"
+  }
+}
+
+
