@@ -1,0 +1,3 @@
+variable "testinstances_type" {
+    
+}

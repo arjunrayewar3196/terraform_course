@@ -1,0 +1,1 @@
+testinstances_type="t2.micro"
