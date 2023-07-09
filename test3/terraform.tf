@@ -1,1 +1,1 @@
-testinstances_type="t2.micro"
+testinstance_type="t2.micro"
