@@ -7,7 +7,7 @@ provider "aws" {
 
 resource "aws_instance" "webserver" {
   ami           = "ami-069d73f3235b535bd"
-  instance_type = var.testinstances_type
+  instance_type = var.instance_type
 
   tags = {
     Name = "server1"

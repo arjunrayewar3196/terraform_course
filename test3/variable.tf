@@ -1,3 +1,3 @@
-variable "testinstances_type" {
-    
+variable "instance_type" {
+
 }
